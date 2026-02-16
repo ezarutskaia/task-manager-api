@@ -3,4 +3,8 @@ uvicorn[standard]
 SQLAlchemy
 databases
 psycopg2-binary
+pydantic[email]
 alembic
+passlib[bcrypt]
+bcrypt<4.1
+PyJWT
