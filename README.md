@@ -18,9 +18,10 @@ cd task-manager-api
 docker-compose up --build
 ```
 
-3. Примените миграции (в отдельном терминале):
+3. Создайте и примените миграции (в отдельном терминале):
 
 ```bash
+docker-compose exec app alembic revision --autogenerate -m "initial"
 docker-compose exec app alembic upgrade head
 ```
 
